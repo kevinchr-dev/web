@@ -1,0 +1,117 @@
+@import "tailwindcss";
+
+:root {
+  /* Themeable Colors - Restored to Original Vibe */
+  --background: 210 11% 7%; /* #0f1211 */
+  --foreground: 0 122% 255%; /* #e7eceb */
+
+  --muted: 240 2% 16%; /* #27272a */
+  --muted-foreground: 160 14% 93% / 0.7; /* rgba(231, 236, 235, 0.7) */
+  --muted-foreground-light: 160 14% 93% / 0.5; /* rgba(231, 236, 235, 0.5) */
+  --muted-foreground-dark: 160 14% 93% / 0.6; /* rgba(231, 236, 235, 0.6) */
+
+  --card: 220 17% 98% / 0.01;
+  --card-foreground: 160 14% 93%;
+
+  --popover: 210 11% 7%;
+  --popover-foreground: 160 14% 93%;
+
+  /* Primary Accent Colors */
+  --primary: 165 96% 71%; /* #78fcd6 */
+  --primary-foreground: 160 8% 6%; /* #0d0f0e */
+  --primary-dark: 160 100% 50%; /* #00ffb6 */
+  --primary-light: 160 48% 87%; /* New variable for lighter teal/green shades */
+
+  /* Secondary Accent Colors (for buttons, etc.) */
+  --secondary: 0 122% 255%; /* #e7eceb */
+  --secondary-foreground: 165 14% 8%; /* #141a18 */
+
+  --accent: 240 2% 25%; /* #3f3f42 */
+  --accent-foreground: 240 2% 96%; /* #f4f4f5 */
+
+  --border: 240 100% 100% / 0.08; /* rgba(255, 255, 255, 0.08) */
+  --border-light: 210 17% 6% / 0.1; /* rgba(16,24,40,0.1) */
+  --border-dark: 210 17% 6% / 0.05; /* rgba(16,24,40,0.05) */
+
+  --ring: 165 96% 71%;
+
+  --radius: 0.5rem;
+}
+
+.dark {
+  --background: 210 11% 7%; /* #0f1211 */
+  --foreground: 0 122% 255%; /* #e7eceb */
+
+  --muted: 240 2% 16%; /* #27272a */
+  --muted-foreground: 160 14% 93% / 0.7; /* rgba(231, 236, 235, 0.7) */
+  --muted-foreground-light: 160 14% 93% / 0.5; /* rgba(231, 236, 235, 0.5) */
+  --muted-foreground-dark: 160 14% 93% / 0.6; /* rgba(231, 236, 235, 0.6) */
+
+  --card: 220 17% 98% / 0.01;
+  --card-foreground: 160 14% 93%;
+
+  --popover: 210 11% 7%;
+  --popover-foreground: 160 14% 93%;
+
+  /* Primary Accent Colors */
+  --primary: 165 96% 71%; /* #78fcd6 */
+  --primary-foreground: 160 8% 6%; /* #0d0f0e */
+  --primary-dark: 160 100% 50%; /* #00ffb6 */
+  --primary-light: 160 48% 87%;
+
+  /* Secondary Accent Colors (for buttons, etc.) */
+  --secondary: 0 122% 255%; /* #e7eceb */
+  --secondary-foreground: 165 14% 8%; /* #141a18 */
+
+  --accent: 240 2% 25%; /* #3f3f42 */
+  --accent-foreground: 240 2% 96%; /* #f4f4f5 */
+
+  --border: 240 100% 100% / 0.08; /* rgba(255, 255, 255, 0.08) */
+  --border-light: 210 17% 6% / 0.1; /* rgba(16,24,40,0.1) */
+  --border-dark: 210 17% 6% / 0.05; /* rgba(16,24,40,0.05) */
+
+  --ring: 165 96% 71%;
+}
+
+/* Tailwind v4 @theme configuration with semantic design tokens */
+@theme {
+  --color-border: hsl(var(--border));
+  --color-ring: hsl(var(--ring));
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+  --color-primary-dark: hsl(var(--primary-dark));
+  --color-primary-light: hsl(var(--primary-light));
+
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+  --color-muted-foreground-light: hsl(var(--muted-foreground-light));
+  --color-muted-foreground-dark: hsl(var(--muted-foreground-dark));
+
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+
+  --color-popover: hsl(var(--popover));
+  --color-popover-foreground: hsl(var(--popover-foreground));
+
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+
+  --color-border-light: hsl(var(--border-light));
+  --color-border-dark: hsl(var(--border-dark));
+
+  --radius: var(--radius);
+}
+
+* {
+  @apply border-border;
+}
+
+body {
+  @apply bg-background text-foreground;
+}
