@@ -99,7 +99,7 @@
         "transform": "lodash/{{member}}"
       }
     },
-    "outputFileTracingRoot": "/Users/alizaenazet/programming/personal/project/pickpics/picky-pics-landingpage",
+    "outputFileTracingRoot": "/Users/kevinchr/Downloads/picky-pics-landingpage",
     "experimental": {
       "useSkewCookie": false,
       "cacheLife": {
@@ -289,10 +289,10 @@
     "bundlePagesRouterDependencies": false,
     "configFileName": "next.config.mjs",
     "turbopack": {
-      "root": "/Users/alizaenazet/programming/personal/project/pickpics/picky-pics-landingpage"
+      "root": "/Users/kevinchr/Downloads/picky-pics-landingpage"
     }
   },
-  "appDir": "/Users/alizaenazet/programming/personal/project/pickpics/picky-pics-landingpage",
+  "appDir": "/Users/kevinchr/Downloads/picky-pics-landingpage",
   "relativeAppDir": "",
   "files": [
     ".next/routes-manifest.json",
